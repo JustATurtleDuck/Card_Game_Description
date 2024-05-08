@@ -41,6 +41,7 @@ function testCheckExistence(gameName) {
 }
 
 // Test cases
+// Required card games: poker, cribbage, blackjack, gin_rummy and hearts
 const cardGames = ['poker', 'cribbage', 'blackjack', 'gin_rummy', 'hearts', 'spades'];
 
 for (const game of cardGames) {
