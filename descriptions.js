@@ -15,7 +15,9 @@ const server = http.createServer((req, res) => {
             // Display the available endpoints
             res.writeHead(200, { 'Content-Type': 'text/plain' });
             res.end('Welcome to the Card Game Microservice. Available endpoints:\n/get-description?game=<game_name>\n/check-existence?game=<game_name>');
-        } 
+        }
+
+        // Get the description of a card game
         else if (url.startsWith('/get-description')) {
             const gameName = url.split('=')[1];
             const filePath = path.join(CARD_GAME_DIRECTORY, `${gameName}.txt`);
@@ -33,6 +35,7 @@ const server = http.createServer((req, res) => {
                 }
             });
         } 
+
         // Check if the card game exists
         else if (url.startsWith('/check-existence')) {
             const gameName = url.split('=')[1];
@@ -48,7 +51,8 @@ const server = http.createServer((req, res) => {
                     res.end('Card game exists');
                 }
             });
-        } 
+        }
+
         // Invalid endpoint
         else {
             res.writeHead(404, { 'Content-Type': 'text/plain' });
