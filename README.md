@@ -8,7 +8,7 @@ This microservice provides descriptions for various card games. Users can reques
 To request data from the microservice, send an HTTP GET request to the appropriate endpoint:
 
 - Get Description: GET /get-description?game=<game_name>
-  - Replace <game_name> with the name of the card game you want the description for (games with two or words have an underscore rather than spaces. For example: "gin rummy" is "gin_rummy").  
+  - Replace <game_name> with the name of the card game you want the description for (games with two or more words have an underscore rather than spaces. For example: "gin rummy" is "gin_rummy").  
   - Example call: GET /get-description?game=poker
 - Check Existence: GET /check-existence?game=<game_name>
   - Replace <game_name> with the name of the card game you want to check existence for.
