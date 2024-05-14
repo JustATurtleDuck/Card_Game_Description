@@ -2,6 +2,10 @@
 
 This microservice provides descriptions for various card games. Users can request descriptions for specific card games and check if a particular card game exists in the database.
 
+## How to Use
+- Download the code from the latest release into the same directory as your main program.
+- Have it running when you provide the HTTP get request on the same port (currently runs on 3000)
+
 ## Communication Contract
 ### Requesting Data
 
