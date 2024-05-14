@@ -16,3 +16,8 @@ To request data from the microservice, send an HTTP GET request to the appropria
 
 ### Receiving Data
 The microservice will respond with the requested data in plain text format.
+
+### Sequence Digram:
+![assignment8_UML](https://github.com/JustATurtleDuck/Card_Game_Description/assets/72314242/8241d19a-9862-4e76-9d84-515324479435)
+
+
